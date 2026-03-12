@@ -4,33 +4,33 @@
 
 Lista* lista_crear()
 {
-    Lista* lista = malloc(sizeof(Lista));
+    
+    /*
+    TODO:
 
-    lista->head = NULL;
-    lista->tail = NULL;
-
-    return lista;
+    1 Crear un apuntador a lista
+    2 Reswevar memoria para lista
+    3 Devolver la lista
+    */
 }
 
 int lista_vacia(Lista* lista)
 {
-    return lista->head == NULL;
+    
 }
 
 void lista_insertar_head(Lista* lista, int dato)
 {
-    Nodo* nuevo = nodo_crear(dato);
+    /*
+    TODO:
 
-    if(lista_vacia(lista))
-    {
-        lista->head = nuevo;
-        lista->tail = nuevo;
-    }
-    else
-    {
-        nuevo->siguiente = lista->head;
-        lista->head = nuevo;
-    }
+    1 Crear nuevo nodo
+    2 Si lista está vacía:
+        head y tail apuntan al nuevo nodo
+    3 Si no:
+        head apunta al nuevo nodo
+        actualizar tail
+    */
 }
 
 void lista_insertar_tail(Lista* lista, int dato)
@@ -100,10 +100,11 @@ void lista_imprimir(Lista* lista)
 
 void lista_destruir(Lista* lista)
 {
-    while(!lista_vacia(lista))
-    {
-        lista_eliminar_head(lista);
-    }
+    /*
+    TODO:
 
-    free(lista);
+    1 si la lista no esta vacia
+    2 borrar el primero o el último 
+    3 hacer que lista apunte a nulo
+    */
 }
