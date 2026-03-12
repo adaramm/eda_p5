@@ -7,7 +7,10 @@ Cola* cola_crear()
 
 int cola_vacia(Cola* cola)
 {
-    return lista_vacia(cola);
+    /*
+    TODO
+    usar vaciar_lista
+    */
 }
 
 void cola_enqueue(Cola* cola, int dato)
@@ -38,5 +41,8 @@ int cola_frente(Cola* cola)
 
 void cola_destruir(Cola* cola)
 {
-    lista_destruir(cola);
+    /*
+    TODO
+    usar lista_destruir
+    */
 }
