@@ -2,12 +2,18 @@
 
 Pila* pila_crear()
 {
-    return lista_crear();
+    /*
+    TODO
+    usar crear lista
+    */
 }
 
 int pila_vacia(Pila* pila)
 {
-    return lista_vacia(pila);
+    /*
+    TODO
+    usar lista_vacia
+    */
 }
 
 void pila_push(Pila* pila, int dato)
@@ -38,5 +44,6 @@ int pila_top(Pila* pila)
 
 void pila_destruir(Pila* pila)
 {
-    lista_destruir(pila);
+    // TODO
+    // Usar lista destruir
 }
